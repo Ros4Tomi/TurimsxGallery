@@ -1,3 +1,3 @@
-# Repositorio de Turimsx con github
+# Repositorio de Turimsx Gallery con github
 
-#### Sitio web Turimsx github
+#### Sitio web Turimsx Gallerygithub
