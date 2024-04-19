@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impresionismo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Pinturas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="fondo">
+<body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -57,27 +57,64 @@
         </div>
     </nav>
 
-    <div class="gallery">
-        <div>
-            <a href="p1.html">
-                <img src="../img/vango.jpg" alt="Imagen 1">
-            </a>
-            <div class="caption">Noche estrellada</div>
-        </div>
-        <div>
-            <a href="p15.html">
-                <img src="../img/mountain.jpeg" alt="Imagen 2">
-            </a>
-            <div class="caption">Mountain</div>
-        </div>
-        <div>
-            <a href="p16.html">
-                <img src="../img/isra.jpg" alt="Imagen 3">
-            </a>
-            <div class="caption">Town</div>
-        </div>
-    </div>
+<div class="container mt-5">
+    <h2>Pinturas de la Galería</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../img/abs.jpg" alt="Expresión Humana" width="100"></td>
+                <td>Expresión Humana</td>
+                <td>230</td>
+                <td>
+                    <div class="input-group">
+                        <button class="btn btn-danger" type="button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <input type="number" class="form-control" value="1" min="1">
+                    </div>
+                </td>
+            </tr>
+            <!-- Agregar filas para las otras pinturas aquí -->
+            <!-- Ejemplo: -->
+            <tr>
+                <td><img src="../img/universe.jpg" alt="Universo Abstracto" width="100"></td>
+                <td>Universo Abstracto</td>
+                <td>150</td>
+                <td>
+                    <div class="input-group">
+                        <button class="btn btn-danger" type="button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <input type="number" class="form-control" value="1" min="1">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="../img/gotas.jpg" alt="Gotas Ficticias" width="100"></td>
+                <td>Gotas Ficticias</td>
+                <td>200</td>
+                <td>
+                    <div class="input-group">
+                        <button class="btn btn-danger" type="button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <input type="number" class="form-control" value="1" min="1">
+                    </div>
+                </td>
+            </tr>
+            <!-- Agregar más filas para las pinturas restantes -->
+        </tbody>
+    </table>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
