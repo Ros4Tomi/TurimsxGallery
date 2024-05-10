@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clima</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/super.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedidos.html">Mis pedidos</a>
+                    </li>
+                    <!-- Opción desplegable "Admin" -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmin">
+                            <!-- Submenú "Pinturas" -->
+                            <li><a class="dropdown-item" href="pinturas.html">Pinturas</a></li>
+                            <!-- Submenú "Add Art" -->
+                            <li><a class="dropdown-item" href="formulario.html">Add Art</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <img src="../img/carrito.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="contenedor">
+        <div id="caja1">
+            <h1 id="temperatura-valor"></h1>
+            <h1 id="temperatura-descripcion"></h1>
+        </div>
+        <div id="caja2">
+            <h2 id="ubicacion"></h2>
+            <img id="icono-animado" src="" alt="" height="128" width="128">
+        </div>
+        <div id="caja3">
+            <h3>Veloc. del Viento</h3>
+            <h1 id="viento-velocidad"></h1>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
